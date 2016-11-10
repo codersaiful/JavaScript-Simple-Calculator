@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>JavaScript Class 2</title>
+		<script>
+			var a="1";
+			var b=2;
+			
+			var total = parseInt(a) + b;
+			//alert(total);
+		</script>
+	</head>
+	<body>
+		<input style="font-size:22px;font-weight:bold;" value="0" type="text" id="screen" >
+		
+		<br>
+		screen store:
+		<input value="0" type="hidden" id="screen_store" >
+		<br>
+		Temp screen store:
+		<input value="0" type="hidden" id="temp_screen_store" >
+		<br>
+		
+		sign store:
+		<input type="hidden" id="sign_store" value="0">
+		<br>
+		<input onclick="pressNumber(this.value);" type="button" value="1">
+		<input onclick="pressNumber(this.value);" type="button" value="2">
+		<input onclick="pressNumber(this.value);" type="button" value="3"><br>
+		<input onclick="pressNumber(this.value);" type="button" value="4">
+		<input onclick="pressNumber(this.value);" type="button" value="5">
+		<input onclick="pressNumber(this.value);" type="button" value="6">
+		<br>
+		<input onclick="pressNumber(this.value);" type="button" value="7">
+		<input onclick="pressNumber(this.value);" type="button" value="8">
+		<input onclick="pressNumber(this.value);" type="button" value="9">
+		<br>
+		
+		<input onclick="pressNumber(this.value);" type="button" value="0">
+		<hr>
+		<input onclick="pressSign(this.value);" type="button" value="+">
+		<input onclick="pressSign(this.value);" type="button" value="-">
+		<input onclick="pressSign(this.value);" type="button" value="*">
+		<input onclick="pressSign(this.value);" type="button" value="/"><br>
+		<input style="color: red;" onclick="clearButton();" type="button" value="C">
+		<input onclick="getResult();" type="button" value="=">
+	
+	<script src="script.js"></script>
+	</body>
+</html>
